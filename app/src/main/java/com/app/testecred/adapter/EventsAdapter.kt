@@ -7,13 +7,11 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.app.testecred.R
 import com.app.testecred.api.model.Events
-import com.app.testecred.util.Description
+import com.app.testecred.Description
 import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.layout_events.view.*
 
-
-class EventsAdapter (val events : List<Events>) : RecyclerView.Adapter<EventsAdapter.EventsViewHolder>() {
-
+class EventsAdapter(val events: List<Events>) : RecyclerView.Adapter<EventsAdapter.EventsViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): EventsViewHolder {
         return EventsViewHolder(

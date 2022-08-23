@@ -12,10 +12,10 @@ const val BASE_URL = "http://5f5a8f24d44d640016169133.mockapi.io/api/"
 interface EventsApi {
 
     @GET("events")
-    fun getEvents() : Call<List<Events>>
+    fun getEvents(): Call<List<Events>>
 
     companion object {
-        operator fun invoke() : EventsApi{
+        operator fun invoke(): EventsApi {
             return Retrofit.Builder()
                 .baseUrl(BASE_URL)
                 .addConverterFactory(GsonConverterFactory.create())
@@ -26,8 +26,6 @@ interface EventsApi {
 
     @POST("checkin")
     fun postCheckin(
-        @Path(value = "id") eventId: String?,
         @Body requestBody: RequestBody?,
-
-    ): Call<Events?>?
+    ): Call<Void>
 }

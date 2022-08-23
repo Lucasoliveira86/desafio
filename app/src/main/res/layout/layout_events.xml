@@ -32,7 +32,6 @@
 
             </RelativeLayout>
 
-
             <RelativeLayout
                 android:padding="10dp"
                 android:background="#F8F8FF"

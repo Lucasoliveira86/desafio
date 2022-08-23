@@ -8,12 +8,12 @@
         android:id="@+id/et_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nome:"/>
+        android:hint="@string/nome"/>
 
     <EditText
         android:id="@+id/et_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="E-mail:"/>
+        android:hint="@string/e_mail"/>
 
 </LinearLayout>

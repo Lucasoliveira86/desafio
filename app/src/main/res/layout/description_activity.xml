@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".util.Description"
+    tools:context=".Description"
     android:background="#E0FFFF">
 
     <ImageView
         android:id="@+id/iv_description"
         android:layout_width="416dp"
-        android:layout_height="325dp"
+        android:layout_height="250dp"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -62,15 +62,19 @@
 
     <TextView
         android:id="@+id/tv_description"
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_checkin"
         android:layout_below="@+id/tv_title"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
-        android:padding="10dp"
+        android:layout_marginBottom="20dp"
         android:background="@color/white"
         android:gravity="center"
+        android:padding="10dp"
         android:text="@string/description"
         android:textColor="@color/black" />
 
@@ -78,10 +82,10 @@
         android:id="@+id/btn_checkin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tv_description"
         android:layout_alignStart="@+id/tv_description"
         android:layout_alignEnd="@+id/tv_description"
-        android:layout_marginTop="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="21dp"
         android:background="@drawable/button_arredondado"
         android:gravity="center"
         android:shadowRadius="@integer/material_motion_duration_long_1"
