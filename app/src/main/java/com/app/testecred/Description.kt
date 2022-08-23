@@ -59,23 +59,23 @@ class Description : AppCompatActivity() {
     fun editUserCheckIn() {
         val builder = AlertDialog.Builder(this)
         val inflater = layoutInflater
-        builder.setTitle("With EditText")
+        builder.setTitle("Adicione seu nome e e-mail:")
         val dialogLayout = inflater.inflate(R.layout.alert_dialog_with_edittext, null)
         val edName = dialogLayout.findViewById<EditText>(R.id.et_name)
         val edEmail = dialogLayout.findViewById<EditText>(R.id.et_email)
         builder.setView(dialogLayout)
-        builder.setPositiveButton("Confirm") { dialogInterface, i ->
+        builder.setPositiveButton("Confirmar") { dialogInterface, i ->
             if (!edName.text.isEmpty() && !edEmail.text.isEmpty() && edEmail.text.contains("@")) {
                 userCheckIn(edName.text.toString(), edEmail.text.toString())
             } else {
                 Toast.makeText(
                     this,
-                    "It is necessary to fill in all the fields.",
+                    "É necessário preencher todos os campos.",
                     Toast.LENGTH_SHORT
                 ).show()
             }
         }
-        builder.setNegativeButton("cancel") { dialogInterface, i ->
+        builder.setNegativeButton("Cancelar") { dialogInterface, i ->
         }
         builder.show()
     }
