@@ -1,0 +1,10 @@
+<resources>
+<!--    App name-->
+    <string name="app_name">TesteCred</string>
+
+<!--    Layout events  and description activity-->
+    <string name="title">Título</string>
+    <string name="description">Descrição</string>
+    <string name="check_in">check-in</string>
+
+</resources>
